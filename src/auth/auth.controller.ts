@@ -18,12 +18,5 @@ export class AuthController {
     return this.authService.login(user);
   }
 
-  @UseGuards(JwtAuthGuard)
-  @Post('profile')
-  getProfile(@Request() req, @Body() body) {
- return {
-  message: 'Profile fetched successfully',
-  user: req.user,
- }
-}
+  
 }
