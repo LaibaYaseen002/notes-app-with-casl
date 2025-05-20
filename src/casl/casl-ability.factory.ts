@@ -33,8 +33,8 @@ export class CaslAbilityFactory {
     } else {
       can(Action.Create, Note);
       can(Action.Read, Note);
-      can(Action.Update, Note, { author: { id: user.id } });
-      can(Action.Delete, Note, { author: { id: user.id } });
+      can(Action.Update, Note );
+      can(Action.Delete, Note );
     }
 
     return build({
